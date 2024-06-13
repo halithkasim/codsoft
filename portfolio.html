@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" src="c:\Users\HALITH KASIM\OneDrive\Desktop\image\robot_ai.png">
+    <title>my portfolio</title>
+    <link rel="icon" href="c:\Users\HALITH KASIM\OneDrive\Desktop\image\icon.png">
+    <link rel="stylesheet" href="image.css">
+    <script src="form.js">
+    </script>
+</head>
+<style>
+    .about-img img{
+           box-shadow: 2px 4px 2px 2px darkgoldenrod;
+           border-radius : 50%;
+
+    }
+    .contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+
+}
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background-color: rgb(241, 241,241);
+    border-radius: 0.8rem;
+    margin: 2rem;
+    resize: none;
+}
+.contact-form form textarea{
+    margin: 5px solid grey;
+}
+.contact-form form .btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+.contact-form form .btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+marquee{
+    background-clip: text;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: darkgoldenrod;
+    padding: 5px;
+}
+
+
+</style>
+
+
+<body>
+  <header class="header">
+    <a href="#" class="logo"><span>Halith</span></a>
+    <nav class="navbar">
+        <a href="#"> Portfolio</a>
+        <a href="#"> Service</a>
+        <a href="#">Experience</a>
+        <a href="#"> Education</a>
+        <a href="#"> Projects</a>
+    </nav>
+    <a href="#" class="contact"> Contact Me</a>
+   </header>
+
+
+   <section class="home">
+    <div class="home-content">
+        <h3>Hi</h3>
+        <h1>I'm<span>Halith<br></span>a Frontend Developer</h1>
+        <p>
+         A front-end developer is a professional, responsible for crafting the visual and interactive components of websites and web applications. They utilize languages like HTML, CSS, and JavaScript to build the structure, style, and functionality of web pages, ensuring they look and perform seamlessly across various devices and browsers.A Front-End Developer is someone who creates websites and web applications.
+        </p>
+        <div class="btn-box">
+            <button class="btn-1"> Hire Me</button>
+            <button class="btn-2"> Experience</button>
+        </div>
+    </div>
+    <div class="image">
+            <img src="c:\Users\HALITH KASIM\OneDrive\Desktop\image\robot_ai.png" alt="robot">
+    </div>
+    </section>
+
+
+    <section class="about">
+        <div class="about-img">
+            <img src="c:\Users\HALITH KASIM\OneDrive\Desktop\image\robot_ai.png" alt="robot" height="370px" width="300px">  
+        </div>          
+        <div class="about-content">
+            <h2 class="heading">
+                About <span>Me</span>
+            </h2>
+            <h3 style="color: antiquewhite; font-size: 62px;">
+                Frontend <span>Developer</span>
+            </h3>
+            <p style="color: antiquewhite;">
+                A Front-End Developer is someone who creates websites and web applications.
+                The main responsibility of the Front-End Developer is the User interface.
+                The basic languages for Front-End Development are HTML, CSS, and JavaScript.
+            </p>
+            <a href="#" class="btn-2">Experience</a>
+        </div>
+           
+    </section>
+
+
+    <section class="contact-form">
+        <h2 class="contact-me"> Contact <span>Me</span></h2>
+
+        <form name="myform" onsubmit="return validationform()">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+            </div>
+            <div class="input-box">    
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea  type="text" cols="30" rows="10" placeholder="Your Message">
+
+            </textarea>
+            <input type="submit" value="Send Mesaage" class="btn-1" onclick="return validationform()">
+        </form>
+    </section>
+    <marquee>
+        <h2> Thank You For Visiting
+
+        </h2>
+    </marquee>
+    </body>
+</html>
